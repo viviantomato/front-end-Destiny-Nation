@@ -1,11 +1,17 @@
 import React from "react";
 import "./Profile.css";
 import "../Components/Footprint";
+import Footprint from "../Components/Footprint";
 import "../Components/Wishlist";
+import Wishlist from "../Components/Wishlist";
+import "../Components/NewCityForm";
+import NewCityForm from "../Components/NewCityForm";
 
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-import Footprint from "../Components/Footprint";
+import Switch from "@mui/material/Switch";
+import FormGroup from "@mui/material/FormGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
 
 const Profile = () => (
   <div>
@@ -21,6 +27,16 @@ const Profile = () => (
       <Footprint></Footprint>
 
       <h2>Wishlist ✨ </h2>
+      <FormGroup>
+        <FormControlLabel
+          control={<Switch defaultChecked color="secondary" />}
+          label="Public"
+        />
+      </FormGroup>
+      <Wishlist> </Wishlist>
+
+      <h2>Add a Destination</h2>
+      {/* <NewCityForm> </NewCityForm> */}
     </main>
   </div>
 );
