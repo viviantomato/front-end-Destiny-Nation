@@ -1,0 +1,24 @@
+h1 {
+  font-family: "Rockwell", cursive;
+  color: rgb(72, 56, 56);
+  font-size: 10rem;
+  font-weight: 100;
+}
+h2 {
+  font-family: "Arial", cursive;
+  color: rgb(234, 200, 175);
+  font-size: 6rem;
+  font-weight: 400;
+}
+
+h3 {
+  color: rgb(229, 217, 182);
+}
+
+body {
+  background-color: rgb(85, 113, 83);
+  color: white;
+  font: normal 3em/3.45em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 50px;
+  margin: 0 auto;
+}

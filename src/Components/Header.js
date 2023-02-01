@@ -8,13 +8,13 @@ const Header = () => {
   return (
     <>
       <header>
-        <div className="navLeft">
+        <div>
           {/* <img className="brand-logo" src={logo} alt="maps" /> */}
           <a href="/">
-            <h3>🏞️ Destiny-Nation</h3>
+            <p>Destiny-Nation</p>
           </a>
         </div>
-        <div className="navRight">
+        <div>
           <Link className="btn" to="/">
             Home
           </Link>

@@ -40,6 +40,7 @@ export default function App() {
         <Route exact path="/profile" element={<Profile />} />
         <Route exact path="/destination" element={<Destination />} />
       </Routes>
+      <footer className="footer">© Built by Vivian 2023</footer>
     </>
   );
 }

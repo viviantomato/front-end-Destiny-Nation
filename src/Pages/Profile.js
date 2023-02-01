@@ -1,9 +1,12 @@
 import React from "react";
-import "./Pages.css";
+import "./Profile.css";
 
 const Profile = () => (
   <div>
-    <h2>Profile ⌨️ </h2>
+    <h1>Profile ⌨️ </h1>
+    <main>
+      <h2>Bio</h2>
+    </main>
   </div>
 );
 

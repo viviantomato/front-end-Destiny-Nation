@@ -2,18 +2,3 @@
   font-family: sans-serif;
   text-align: center;
 }
-
-body {
-  background-color: #101012;
-  color: white;
-  font: normal 1em/1.45em "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 50px;
-  margin: 0 auto;
-}
-
-h1 {
-  font-family: "Fredoka One", cursive;
-  color: #15d880;
-  font-size: 2.5rem;
-  font-weight: 100;
-}

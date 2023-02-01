@@ -1,5 +1,5 @@
 import React from "react";
-import "./Pages.css";
+import "./Destination.css";
 
 const Destination = () => {
   return (
