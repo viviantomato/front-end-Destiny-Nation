@@ -1,5 +1,7 @@
 import React from "react";
 import "./Home.css";
+import "../Components/Recommendations";
+import Recommendations from "../Components/Recommendations";
 
 const Home = () => (
   <div className="home-page">
@@ -7,13 +9,11 @@ const Home = () => (
     <main>
       <h2>Intro / Goal </h2>
       <p> ... </p>
-      <p> ... </p>
-      <p> ... </p>
 
-      <section className="popular">
-        <h2>Popular Recommendations</h2>
-        <p> ...sliding ? </p>
-        {/* <CardList cards={cardList}  /> */}
+      <section>
+        <h2>Trending</h2>
+        <Recommendations></Recommendations>
+
         {/* ??? logic on what to show */}
       </section>
 
