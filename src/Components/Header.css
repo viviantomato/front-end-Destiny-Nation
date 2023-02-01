@@ -1,5 +1,5 @@
 header > div {
-  font-size: 1.7rem;
+  font-size: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -33,7 +33,7 @@ header {
   margin: 30px;
   font-family: "Rockwell", cursive;
   color: rgb(72, 56, 56);
-  font-size: 7rem;
+  font-size: 30px;
   font-weight: 100;
 }
 
@@ -43,6 +43,6 @@ header {
 
 p {
   font-family: "Rockwell", cursive;
-  font-size: 8rem;
+  font-size: 40px;
   color: blanchedalmond;
 }
