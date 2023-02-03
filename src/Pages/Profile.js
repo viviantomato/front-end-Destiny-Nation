@@ -1,11 +1,11 @@
 import React from "react";
 import "./Profile.css";
-import "../Components/Footprint";
-import Footprint from "../Components/Footprint";
-import "../Components/Wishlist";
-import Wishlist from "../Components/Wishlist";
-import "../Components/NewCityForm";
-import NewCityForm from "../Components/NewCityForm";
+import "../components/Footprint";
+import Footprint from "../components/Footprint";
+import "../components/Wishlist";
+import Wishlist from "../components/Wishlist";
+import "../components/NewCityForm";
+import NewCityForm from "../components/NewCityForm";
 
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";

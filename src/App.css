@@ -1,8 +1,13 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
 }
-
-header {
+.App {
+  /* text-align: center; */
+  /* background-color: rgb(85, 113, 83); */
+  /* color: white; */
+  padding: 25px 50px;
+}
+/* header {
   font-family: "Fredoka One", cursive;
   display: flex;
   justify-content: space-between;
@@ -18,4 +23,4 @@ element {
   font-family: "Courier New", Courier, monospace;
   font-style: oblique;
   font-weight: 200;
-}
+} */

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
-import "../Components/Recommendations";
-import Recommendations from "../Components/Recommendations";
+import "../components/Recommendations";
+import Recommendations from "../components/Recommendations";
 
 const Home = () => (
   <div className="home-page">

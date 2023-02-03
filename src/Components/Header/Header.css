@@ -1,4 +1,21 @@
-header > div {
+.header {
+  /* color: white; */
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .right-container {
+  display: flex;
+  gap: 16px;
+}
+
+.header .nav-item {
+  text-decoration: none;
+}
+/* header > div {
   font-size: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,4 +62,4 @@ p {
   font-family: "Rockwell", cursive;
   font-size: 40px;
   color: blanchedalmond;
-}
+} */
