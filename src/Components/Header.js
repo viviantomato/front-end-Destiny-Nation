@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import logo from "../img/maps.jpg";
-
 import "./Header.css";
+import Searchbox from "./Searchbox";
 
 const Header = () => {
   return (
@@ -26,6 +25,7 @@ const Header = () => {
           </Link>
         </div>
       </header>
+      <Searchbox></Searchbox>
     </>
   );
 };

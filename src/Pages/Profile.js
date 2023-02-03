@@ -18,7 +18,8 @@ const Profile = () => (
     <h1>Profile ⌨️ </h1>
     <main>
       <h2>Bio 🎴 </h2>
-      <TextField id="outlined-basic" label="Who you are" variant="outlined" />
+      <p> </p>
+      {/* <TextField id="outlined-basic" label="Who you are" variant="outlined" /> */}
 
       <Button variant="contained">Connect</Button>
       <Button variant="contained">Message</Button>
