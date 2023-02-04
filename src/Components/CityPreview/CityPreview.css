@@ -1,0 +1,4 @@
+.city-preview .card-action-area {
+  display: flex;
+  flex-direction: row;
+}

@@ -253,3 +253,7 @@ const MOCK_RESPONSE = {
 export const searchCities = (query) => {
   return new Promise((resolve) => resolve(MOCK_RESPONSE));
 };
+
+export const searchCitiesEmpty = (query) => {
+  return new Promise((resolve) => resolve([]));
+};
