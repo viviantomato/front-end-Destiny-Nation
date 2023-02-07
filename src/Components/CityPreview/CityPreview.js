@@ -10,12 +10,9 @@ import { useNavigate } from "react-router-dom";
 
 import LocationCityIcon from "@mui/icons-material/LocationCity";
 
-import "./CityPreview.css";
+import { getImageUrl } from "utils/processIncludedData";
 
-const getImageUrl = (id, data) => {
-  const image = data.find((datum) => datum.id === id && datum.type === "photo");
-  return image?.attributes?.image?.full ?? "";
-};
+import "./CityPreview.css";
 
 export const CityPreview = ({ city, extraInfo }) => {
   const navigate = useNavigate();
