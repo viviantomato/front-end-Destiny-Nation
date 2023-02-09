@@ -35,5 +35,21 @@ export const getSafetyScore = ({ data, included }) => {
     data?.relationships?.country?.data?.id,
     included
   );
-  return data?.attributes?.safety[countryName];
+  const cityName = data.attributes.name;
+
+  return data?.attributes?.safety[cityName]
+    ? data?.attributes?.safety[cityName]
+    : data?.attributes?.safety[countryName];
+};
+
+export const getBudget = ({ data, included }) => {
+  const countryName = getCountryName(
+    data?.relationships?.country?.data?.id,
+    included
+  );
+  const cityName = data.attributes.name;
+
+  return data?.attributes?.budget[cityName]
+    ? data?.attributes?.budget[cityName]
+    : data?.attributes?.budget[countryName];
 };

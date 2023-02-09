@@ -251,7 +251,23 @@ const MOCK_RESPONSE = {
 };
 
 export const searchCities = (query) => {
-  return new Promise((resolve) => resolve(MOCK_RESPONSE));
+  // return new Promise((resolve) => resolve(MOCK_RESPONSE));
+  var myHeaders = new Headers();
+  myHeaders.append(
+    "Authorization",
+    "Basic OWVkOTExMmJhY2Q0NjZhNGI4ZDdlOGMyNzA2ZGU2ODM6NWVjOTllMjIwYTEzYTQ3ZDBjZmNkMDU1NjZiNGYzZTg="
+  );
+
+  var requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow",
+  };
+
+  return fetch(
+    `https://api.roadgoat.com/api/v2/destinations/auto_complete?q=${query}`,
+    requestOptions
+  ).then((response) => response.json());
 };
 
 export const searchCitiesEmpty = (query) => {

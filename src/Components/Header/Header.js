@@ -11,15 +11,15 @@ export const Header = () => {
       <div className="container">
         <div>
           <RouterLink className="nav-item" to="/">
-            <Link component="span" variant="h4">
+            <Link component="span" variant="h3">
               Destiny-Nation
             </Link>
           </RouterLink>
         </div>
         <div className="right-container">
-          {/* <RouterLink className="nav-item" to="/profile">
+          <RouterLink className="nav-item" to="/profile">
             <Link variant="h4">Profile</Link>
-          </RouterLink> */}
+          </RouterLink>
           {/* <RouterLink className="nav-item" to="/destination">
             <Link variant="h4">Destination</Link>
           </RouterLink> */}

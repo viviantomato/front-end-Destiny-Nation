@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, CircularProgress } from "@mui/material";
 
 import { CityPreview } from "components/CityPreview";
 import { searchCities, searchCitiesEmpty } from "services/searchCities";
@@ -12,10 +12,12 @@ export const SearchResult = () => {
 
   const [cities, setCities] = useState([]);
   const [extraInfo, setExtraInfo] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetch = async () => {
       const result = await searchCities(query);
+      setIsLoading(false);
       console.log(result);
       setCities(
         result.data.filter(
@@ -26,6 +28,21 @@ export const SearchResult = () => {
     };
     fetch();
   }, []);
+
+  if (isLoading) {
+    return (
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flex: 1,
+        }}
+      >
+        <CircularProgress />
+      </Box>
+    );
+  }
 
   return (
     <div className="search-result">

@@ -1,26 +1,23 @@
 import React from "react";
 import "./Home.css";
-import "../components/Recommendations";
-import Recommendations from "../components/Recommendations";
+import "../components/Recommendations/Recommendations";
+import { Recommendations } from "../components/Recommendations";
+import EmailIcon from "@mui/icons-material/Email";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 const Home = () => (
   <div className="home-page">
     <h1>Home</h1>
     <main>
-      <h2>Intro / Goal </h2>
-      <p> ... </p>
-
       <section>
         <h2>Trending</h2>
-        <Recommendations></Recommendations>
-
-        {/* ??? logic on what to show */}
+        <Recommendations />
       </section>
-
       <h2>Contact</h2>
-      <ul> Email </ul>
-      <ul> Phone </ul>
-
+      <EmailIcon> </EmailIcon>
+      <p>vivian22lab@gmail.com </p>
+      <LocalPhoneIcon> </LocalPhoneIcon>
+      <p>206-698-7607 </p>
       <h2> About Us </h2>
       <p> ... </p>
       <p> ... </p>

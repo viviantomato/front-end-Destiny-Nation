@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Carousel from "react-material-ui-carousel";
-import { Typography, Box, Rating, Chip, Avatar } from "@mui/material";
+import { Typography, Box, Link, Chip, Avatar } from "@mui/material";
 
 import { getCity } from "services/getCity";
 import {
@@ -9,6 +9,7 @@ import {
   getImageUrl,
   getCovidScore,
   getSafetyScore,
+  getBudget,
 } from "utils/processIncludedData";
 
 const getImageUrls = ({ data, included }) => {
@@ -26,6 +27,11 @@ const getKnownFors = ({ data, included }) => {
 const getSafetyDescription = (city) => {
   const safetyData = getSafetyScore(city);
   return `${safetyData.text} - ${safetyData.subText}`;
+};
+
+const getBudgetDescription = (city) => {
+  const budgetData = getBudget(city);
+  return `${budgetData.text} - ${budgetData.subText}`;
 };
 
 export const Destination = () => {
@@ -72,6 +78,7 @@ export const Destination = () => {
             flexDirection: "column",
             margin: "16px",
             gap: "16px",
+            justifyContent: "center",
           }}
         >
           <Box>
@@ -86,16 +93,22 @@ export const Destination = () => {
             ))}
           </Box>
           <Box>
-            <Typography variant="h6">Covid Score</Typography>
+            <Typography variant="h6">Covid Risk</Typography>
             <Typography variant="p">{getCovidScore(city)}</Typography>
           </Box>
           <Box>
-            <Typography variant="h6">Safety Score</Typography>
+            <Typography variant="h6">Safety Level</Typography>
             <Typography variant="p">{getSafetyDescription(city)}</Typography>
           </Box>
           <Box>
+            <Typography variant="h6">Budget Level</Typography>
+            <Typography variant="p">{getBudgetDescription(city)}</Typography>
+          </Box>
+          <Box>
             <Typography variant="h6">Airbnb</Typography>
-            <Typography variant="p">{getCovidScore(city)}</Typography>
+            <Link href={city.data.attributes.airbnb_url} target="_blank">
+              Link
+            </Link>
           </Box>
         </Box>
       </Box>
