@@ -11,13 +11,6 @@ import TableRow from "@mui/material/TableRow";
 const columns = [
   { id: "cityName", label: "City Name", minWidth: 170 },
   { id: "travelYear", label: "Travel Year", minWidth: 50 },
-  {
-    id: "code",
-    label: "Code",
-    minWidth: 170,
-    align: "center",
-    format: (value) => value.toLocaleString("en-US"),
-  },
 ];
 
 function createData(cityName, travelYear, code) {

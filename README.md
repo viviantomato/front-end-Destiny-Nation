@@ -1,3 +1,5 @@
+<!-- This app is designed to find travel buddies for the same destinations, find destination information, share experience and exchange insights.  -->
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

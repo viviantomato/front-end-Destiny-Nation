@@ -24,13 +24,6 @@ const columns = [
     align: "center",
     format: (value) => value.toISOString()("en-US"),
   },
-  {
-    id: "code",
-    label: "Code",
-    minWidth: 170,
-    align: "center",
-    format: (value) => value.toLocaleString("en-US"),
-  },
   { id: "convertButton", label: "Completed", minWidth: 50, align: "center" },
 ];
 
