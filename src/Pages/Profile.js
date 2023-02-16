@@ -5,7 +5,7 @@ import Footprint from "./Footprint";
 import "../components/Wishlist";
 import Wishlist from "../components/Wishlist";
 import "../components/NewCityForm";
-import NewCityForm from "../components/NewCityForm";
+// import NewCityForm from "../components/NewCityForm";
 
 import Button from "@mui/material/Button";
 import Switch from "@mui/material/Switch";
